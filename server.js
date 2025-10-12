@@ -1,0 +1,11 @@
+const express = require("express")
+const app = express()
+require("dotenv").config()
+const userRouter = require("./router/userRouter")
+const mongoose = require("mongoose")
+mongoose.connect(`${process.env.DB_URL}/${process.env.DB_NAME}`)
+
+app.use(userRouter)
+app.use(express.static('public'))
+app.set('view engine','ejs')
+app.listen(process.env.PORT,()=>{console.log(`your serve is runnning port ${process.env.PORT}`)})

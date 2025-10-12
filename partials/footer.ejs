@@ -1,0 +1,88 @@
+<div class="footer mt-5">
+    <div class="container">
+
+        <div class="footer-container">
+
+            <!-- Logo + About -->
+            <div class="footer-col">
+                <img src="/media/icon/logo.png" alt="Awasthi Orbit Carrer" style="max-width:200px;">
+                <p>
+                    Established in 1992, Rus Education is a proud reason of many who are currently living their
+                    dream
+                    and on the way to achieving their goal of becoming a doctor.
+                </p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Useful Links -->
+            <div class="footer-col">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="#">About Russia</a></li>
+                    <li><a href="#">Climate in Russia</a></li>
+                    <li><a href="#">Admission Process</a></li>
+                    <li><a href="#">Refer & Earn</a></li>
+                    <li><a href="#">Partner with us</a></li>
+                    <li><a href="#">Medical Licensing</a></li>
+                    <li><a href="#">NMC Regulations For MBBS Abroad</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Get in Touch -->
+            <div class="footer-col">
+                <h4>Get In Touch</h4>
+                <p>No 2 IP Estate Azad Bhawan Road<br>New Delhi - 110002.</p>
+                <p>📞 1800 833 3338</p>
+                <p>✉️ del@ruseducation.in</p>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-col newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe For Daily Latest News & Updates</p>
+                <input type="email" placeholder="Your email address">
+                <button>Subscribe Now</button>
+                <button>DOWNLOAD BROCHURE 2025</button>
+            </div>
+
+        </div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+            © Copyright Awasthi Orbit Carrer 2025. All Right Reserved. Designed and Developed by
+            <span>Awasthi Orbit Carrer</span>.
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 500,
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuIcon = document.querySelector(".mobile-menu-icon");
+        const mobileMenu = document.querySelector(".mobile-menu");
+        const overlay = document.querySelector(".overlay");
+
+        // Open Menu
+        mobileMenuIcon.addEventListener("click", () => {
+            mobileMenu.classList.add("active");
+            overlay.classList.add("active");
+        });
+
+        // Close Menu on overlay click
+        overlay.addEventListener("click", () => {
+            mobileMenu.classList.remove("active");
+            overlay.classList.remove("active");
+        });
+    });
+</script>

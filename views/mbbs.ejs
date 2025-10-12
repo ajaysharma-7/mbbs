@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <%- include('../partials/hearderlink.ejs') %>
+        <title>Document</title>
+        <style>
+            .university-card {
+                width: 277px;
+                height: 180px;
+                border: 1px solid black;
+            }
+        </style>
+</head>
+
+<body>
+    <%- include('../partials/header.ejs') %>
+        <div class="page-contect">
+            <div class="breadcrumb">
+                <img src="/media/banner/mbbs.png" alt="breadcrumb" class="breadcrumb-bg">
+                <div class="breadcrumb-content">
+                    <h2>Study MBBS Abroad</h2>
+                    <ol>
+                        <li><a href="/">Home</a></li>
+                        <li>Mbbs</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="container">
+                <div class="contact-form-content mt-5 mb-5">
+                    <div class="row">
+                        <div class="col-lg-12 col-xl-6">
+                            <div class="row">
+                                <div class="col-6 mt-5">
+                                    <div class="university-card mbbs-university-card">
+                                        <img src="/media/icon/Armenia.webp" alt="">
+                                        <h3>Study MBBS in Armenia</h3>
+
+                                        <div class="overlay">
+                                            <a href="#" class="detail-btn">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 mt-5">
+                                    <div class="university-card mbbs-university-card">
+                                        <img src="/media/icon/Georgia.webp" alt="">
+                                        <h3>Study MBBS in Georgia</h3>
+                                        <div class="overlay">
+                                            <a href="#" class="detail-btn">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <div class="university-card mbbs-university-card">
+                                        <img src="/media/icon/China.webp" alt="">
+                                        <h3>Study MBBS in China</h3>
+                                        <div class="overlay">
+                                            <a href="#" class="detail-btn">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <div class="university-card mbbs-university-card">
+                                        <img src="/media/icon/Kyrgyzstan.webp" alt="">
+                                        <h3>Study MBBS in Kyrgyzstan</h3>
+                                        <div class="overlay">
+                                            <a href="#" class="detail-btn">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <div class="university-card mbbs-university-card">
+                                        <img src="/media/icon/America.webp" alt="">
+                                        <h3>Study MBBS in America</h3>
+                                        <div class="overlay">
+                                            <a href="#" class="detail-btn">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <div class="university-card mbbs-university-card">
+                                        <img src="/media/icon/Russia.webp" alt="">
+                                        <h3>Study MBBS in Russia</h3>
+                                        <div class="overlay">
+                                            <a href="#" class="detail-btn">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-xl-6">
+                            <%- include('../partials/contactform.ejs') %>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <%- include('../partials/footer.ejs') %>
+
+</body>
+
+</html>

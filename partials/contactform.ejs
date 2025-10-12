@@ -1,0 +1,70 @@
+<div class="form-box" data-aos="fade-up">
+    <h3>Dream With Awasthi Orbit Carrer</h3>
+    <p>Fill in the details and our team will contact you in the next 24 hours.</p>
+    <form>
+        <input class="form-control mt-3" type="text" placeholder="Name *" required>
+        <input class="form-control mt-3" type="email" placeholder="E-mail *" required>
+        <input class="form-control mt-3" type="tel" placeholder="+91 Phone Number" required>
+
+        <!-- Country fixed -->
+        <select class="form-control mt-3" disabled>
+            <option selected>India</option>
+        </select>
+
+
+        <!-- State Dropdown -->
+        <select class="form-control mt-3" id="state" required>
+            <option value="">Select Your State</option>
+        </select>
+
+        <!-- City Dropdown -->
+        <select class="form-control mt-3" id="city" required>
+            <option value="">Select Your City</option>
+        </select>
+
+        <button class="form-control mt-3" type="submit">SUBMIT NOW</button>
+    </form>
+</div>
+
+<script>
+    // Free JSON for Indian States & Cities
+    const stateAPI = "https://cdn.jsdelivr.net/npm/country-state-city@latest/lib/state.json";
+    const cityAPI = "https://cdn.jsdelivr.net/npm/country-state-city@latest/lib/city.json";
+
+    let allCities = [];
+
+    async function loadStates() {
+        const response = await fetch(stateAPI);
+        const states = await response.json();
+
+        const indiaStates = states.filter(s => s.countryCode === "IN");
+        const stateSelect = document.getElementById("state");
+
+        indiaStates.forEach(state => {
+            let option = document.createElement("option");
+            option.value = state.isoCode;
+            option.textContent = state.name;
+            stateSelect.appendChild(option);
+        });
+
+        // Load all cities in background
+        const resCity = await fetch(cityAPI);
+        allCities = await resCity.json();
+    }
+
+    document.getElementById("state").addEventListener("change", function () {
+        const stateCode = this.value;
+        const citySelect = document.getElementById("city");
+        citySelect.innerHTML = "<option value=''>Select Your City</option>";
+
+        const cities = allCities.filter(c => c.countryCode === "IN" && c.stateCode === stateCode);
+        cities.forEach(city => {
+            let option = document.createElement("option");
+            option.value = city.name;
+            option.textContent = city.name;
+            citySelect.appendChild(option);
+        });
+    });
+
+    loadStates();
+</script>
