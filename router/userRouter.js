@@ -1,7 +1,6 @@
 const router = require("express").Router()
 const pageController = require("../controller/pagecontroller")
 
-
 router.get("/", pageController.homePage)
 router.get("/contact-us", pageController.contactPage)
 router.get("/about-us", pageController.aboutPage)
