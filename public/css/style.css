@@ -178,59 +178,59 @@ a {
 
 /* ✅ Mobile Menu Drawer */
 .overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  display: none;
-  z-index: 98;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 98;
 }
 
 /* Mobile Menu Drawer */
 .mobile-menu {
-  position: fixed;
-  top: 0;
-  right: -70%;
-  width: 70%;
-  height: 100vh;
-  background: #fff;
-  z-index: 99;
-  padding: 20px;
-  transition: all 0.4s ease;
-  overflow-y: auto;
+    position: fixed;
+    top: 0;
+    right: -70%;
+    width: 70%;
+    height: 100vh;
+    background: #fff;
+    z-index: 99;
+    padding: 20px;
+    transition: all 0.4s ease;
+    overflow-y: auto;
 }
 
 .mobile-menu.active {
-  right: 0;
+    right: 0;
 }
 
 .overlay.active {
-  display: block;
+    display: block;
 }
 
 .mobile-menu ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .mobile-menu ul a {
-  text-decoration: none;
-  color: #333;
+    text-decoration: none;
+    color: #333;
 }
 
 .mobile-menu ul li {
-  padding: 10px 0;
-  border-bottom: 1px solid #eee;
-  cursor: pointer;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
 }
 
 .mobile-menu button {
-  margin-top: 15px;
-  width: 100%;
-  background: #ee212b;
-  color: #fff;
-  border: none;
-  padding: 10px 0;
-  border-radius: 5px;
+    margin-top: 15px;
+    width: 100%;
+    background: #ee212b;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
 }
 
 
@@ -1270,7 +1270,6 @@ h2.banner-title {
 }
 
 @media (max-width: 786px) {
-
     /*home page*/
     .page-contect {
         margin-top: 0;
