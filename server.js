@@ -4,9 +4,9 @@ require("dotenv").config()
 const createDomainValidator = require('./middleware/domainValidator');
 const userRouter = require("./router/userRouter")
 const mongoose = require("mongoose")
+
+app.set('trust proxy', true);
 mongoose.connect(`${process.env.DB_URL}/${process.env.DB_NAME}`)
-
-
 const domainValidator = createDomainValidator({
     allowed: ['awasthiorbitcareer.com'],
     action: 'redirect',               // 'block' | 'redirect' | 'close'
