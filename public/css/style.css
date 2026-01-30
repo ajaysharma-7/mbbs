@@ -51,7 +51,13 @@ a {
     top: 9px;
     left: 0;
 }
-
+.heading h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 700;
+    font-style: normal;
+}
 .heading h2 {
     font-family: 'Inter', sans-serif;
     font-size: 26px;
@@ -561,19 +567,19 @@ h2.banner-title {
     font-size: 60px;
 }
 
-.service-box-content h3 {
+.service-box-content h4 {
     font-weight: 600;
     margin-bottom: 10px;
     font-size: 19px;
     line-height: 1.6
 }
 
-.service-box-content h3 a {
+.service-box-content h4 a {
     color: #393738;
     text-decoration: none;
 }
 
-.service-box-content h3 a:hover {
+.service-box-content h4 a:hover {
     color: #ee212b;
 }
 
